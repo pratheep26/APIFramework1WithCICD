@@ -16,13 +16,16 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                sh 'mvn clean test verify'
+                sh 'mvn clean verify'
             }
         }
 
         stage('Report') {
             steps {
-                publishHTML([
+                publishHTML(target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
                     reportDir: 'target/cucumber-html-reports',
                     reportFiles: 'overview-features.html',
                     reportName: 'Cucumber Report'
