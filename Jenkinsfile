@@ -8,15 +8,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps { 
-				git (
-				'https://github.com/pratheep26/APIFramework1WithCICD.git',
-				branch: 'main'
-				)
-            }
-        }
-
         stage('Build & Test') {
             steps {
                 sh 'mvn clean verify'
