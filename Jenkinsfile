@@ -10,8 +10,10 @@ pipeline {
 
         stage('Clone') {
             steps { 
+				git (
 				'https://github.com/pratheep26/APIFramework1WithCICD.git',
 				branch: 'main'
+				)
             }
         }
 
