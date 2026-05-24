@@ -9,9 +9,9 @@ pipeline {
     stages {
 
         stage('Clone') {
-            steps {
-				git branch: 'main', 
-				'https://github.com/pratheep26/APIFramework1WithCICD.git'
+            steps { 
+				'https://github.com/pratheep26/APIFramework1WithCICD.git',
+				branch: 'main'
             }
         }
 
