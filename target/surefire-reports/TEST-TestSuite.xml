@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1.381" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="2.085" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2/target/surefire/surefirebooter-20260524202913657_3.jar /Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2/target/surefire 2026-05-24T20-29-13_623-jvmRun1 surefire-20260524202913657_1tmp surefire_0-20260524202913657_2tmp"/>
+    <property name="sun.java.command" value="/Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2/target/surefire/surefirebooter-20260525000149840_3.jar /Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2/target/surefire 2026-05-25T00-01-49_809-jvmRun1 surefire-20260525000149840_1tmp surefire_0-20260525000149840_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2/target/test-classes:/Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2/target/classes:/Users/pratheepponnusamy/.m2/repository/io/rest-assured/rest-assured/6.0.0/rest-assured-6.0.0.jar:/Users/pratheepponnusamy/.m2/repository/org/apache/groovy/groovy/5.0.3/groovy-5.0.3.jar:/Users/pratheepponnusamy/.m2/repository/org/apache/groovy/groovy-xml/5.0.3/groovy-xml-5.0.3.jar:/Users/pratheepponnusamy/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/pratheepponnusamy/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/pratheepponnusamy/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/pratheepponnusamy/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/pratheepponnusamy/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/pratheepponnusamy/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/pratheepponnusamy/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/pratheepponnusamy/.m2/repository/io/rest-assured/json-path/6.0.0/json-path-6.0.0.jar:/Users/pratheepponnusamy/.m2/repository/org/apache/groovy/groovy-json/5.0.3/groovy-json-5.0.3.jar:/Users/pratheepponnusamy/.m2/repository/io/rest-assured/rest-assured-common/6.0.0/rest-assured-common-6.0.0.jar:/Users/pratheepponnusamy/.m2/repository/io/rest-assured/xml-path/6.0.0/xml-path-6.0.0.jar:/Users/pratheepponnusamy/.m2/repository/org/apache/commons/commons-lang3/3.19.0/commons-lang3-3.19.0.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/cucumber-java/7.34.3/cucumber-java-7.34.3.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/cucumber-core/7.34.3/cucumber-core-7.34.3.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/cucumber-gherkin/7.34.3/cucumber-gherkin-7.34.3.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.34.3/cucumber-gherkin-messages-7.34.3.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/gherkin/36.1.0/gherkin-36.1.0.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/messages/30.1.0/messages-30.1.0.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/messages-ndjson/0.3.2/messages-ndjson-0.3.2.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/pretty-formatter/2.4.1/pretty-formatter-2.4.1.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/query/14.7.0/query-14.7.0.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/teamcity-formatter/0.2.0/teamcity-formatter-0.2.0.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/testng-xml-formatter/0.7.0/testng-xml-formatter-0.7.0.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/usage-formatter/0.1.0/usage-formatter-0.1.0.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/tag-expressions/8.1.0/tag-expressions-8.1.0.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/cucumber-expressions/18.1.0/cucumber-expressions-18.1.0.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/cucumber-json-formatter/0.3.2/cucumber-json-formatter-0.3.2.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/datatable/7.34.3/datatable-7.34.3.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/cucumber-plugin/7.34.3/cucumber-plugin-7.34.3.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/docstring/7.34.3/docstring-7.34.3.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/html-formatter/22.3.0/html-formatter-22.3.0.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/junit-xml-formatter/0.11.0/junit-xml-formatter-0.11.0.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/ci-environment/12.0.0/ci-environment-12.0.0.jar:/Users/pratheepponnusamy/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/pratheepponnusamy/.m2/repository/io/cucumber/cucumber-testng/7.34.3/cucumber-testng-7.34.3.jar:/Users/pratheepponnusamy/.m2/repository/org/testng/testng/7.12.0/testng-7.12.0.jar:/Users/pratheepponnusamy/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/pratheepponnusamy/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/pratheepponnusamy/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/pratheepponnusamy/.m2/repository/tools/jackson/core/jackson-databind/3.1.3/jackson-databind-3.1.3.jar:/Users/pratheepponnusamy/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/Users/pratheepponnusamy/.m2/repository/tools/jackson/core/jackson-core/3.1.3/jackson-core-3.1.3.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2/target/surefire/surefirebooter-20260524202913657_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2/target/surefire/surefirebooter-20260525000149840_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.8+12-LTS-250"/>
@@ -45,7 +45,6 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/ht/19hmjqnx47q84b744f2drpw80000gn/T/"/>
     <property name="java.version" value="21.0.8"/>
-    <property name="cucumber.filter.tags" value="@Login"/>
     <property name="user.dir" value="/Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
@@ -59,15 +58,44 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Verify Login API&quot;, &quot;Validate Login API&quot;](1)" classname="cucumberOptions.TestRunner" time="1.056">
-    <system-out><![CDATA[Actual Login Status code: 200
-Expected Login Status code: 200
-Actual Login Success Message: Login Successfully
-Expected Login Success Message: Login Successfully
+  <testcase name="runScenario[&quot;Verify Create Product API&quot;, &quot;Validate Create Product API&quot;](1)" classname="cucumberOptions.TestRunner" time="1.359">
+    <system-out><![CDATA[Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzZjZWI2OWUyYjU0NDNiMWYwMmZjNTciLCJ1c2VyRW1haWwiOiJjb2RlYWRkaWN0QG91dGxvb2suY29tIiwidXNlck1vYmlsZSI6OTk1MjMyMDI0NiwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3OTY0NzUxMSwiZXhwIjoxODExMjA1MTExfQ.vVg-uvw4gCxTJoPNUnhONTrWiXeW-BoZhRJgynVYI3w
+UserId: 676ceb69e2b5443b1f02fc57
+Actual Login Status code: 201
+Expected Login Status code: 201
+Product ID: 6a13441717ee3e78ba98383e
+Actual Login Success Message: Product Added Successfully
+Expected Login Success Message: Product Added Successfully
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Delete Product API&quot;, &quot;Validate Delete Product API&quot;](2)" classname="cucumberOptions.TestRunner" time="0.15">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/6a13441717ee3e78ba98383e
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=6a13441717ee3e78ba98383e
+Headers:		Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzZjZWI2OWUyYjU0NDNiMWYwMmZjNTciLCJ1c2VyRW1haWwiOiJjb2RlYWRkaWN0QG91dGxvb2suY29tIiwidXNlck1vYmlsZSI6OTk1MjMyMDI0NiwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc3OTY0NzUxMSwiZXhwIjoxODExMjA1MTExfQ.vVg-uvw4gCxTJoPNUnhONTrWiXeW-BoZhRJgynVYI3w
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Actual Login Status code: 200
+Expected Login Status code: 200
+Actual Login Success Message: Product Deleted Successfully
+Expected Login Success Message: Product Deleted Successfully
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Login API&quot;, &quot;Validate Login API&quot;](3)" classname="cucumberOptions.TestRunner" time="0.209">
+    <system-out><![CDATA[Actual Login Status code: 200
+Expected Login Status code: 200
+Actual Login Success Message: Login Successfully
+Expected Login Success Message: Login Successfully
+]]></system-out>
   </testcase>
 </testsuite>
