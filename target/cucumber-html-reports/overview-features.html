@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                12,
-                0,
-                0,
+                22,
+                1,
+                4,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 12) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 27) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,7 +107,7 @@ $(document).ready(function() {
         datasets: [{
             data: [
                 3,
-                0
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -154,7 +154,7 @@ $(document).ready(function() {
         datasets: [{
             data: [
                    3,
-                   0
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -230,7 +230,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>API Test - eCommerce</td>
         <td>1</td>
-      <td>09 Jun 2026, 11:30</td>
+      <td>09 Jun 2026, 11:49</td>
     </tr>
   </tbody>
 </table>
@@ -325,7 +325,24 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-feature_3608998785.html">Validate Create Product API</a></td>
+        <td class="tagname"><a href="report-feature_988743072.html">Validate Create Order API</a></td>
+
+        <td      class="passed"    >10</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >4</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">15</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="1826414000">1.826</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_1_3608998785.html">Validate Create Product API</a></td>
 
         <td      class="passed"    >4</td>
         <td >0</td>
@@ -338,11 +355,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="380138000">0.380</td>
+        <td class="duration" data-value="317759000">0.317</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_1_3530439410.html">Validate Delete Product API</a></td>
+        <td class="tagname"><a href="report-feature_2_3530439410.html">Validate Delete Product API</a></td>
 
         <td      class="passed"    >4</td>
         <td >0</td>
@@ -355,11 +372,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="164944000">0.164</td>
+        <td class="duration" data-value="141078000">0.141</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_2_3632632727.html">Validate Login API</a></td>
+        <td class="tagname"><a href="report-feature_3_3632632727.html">Validate Login API</a></td>
 
         <td      class="passed"    >4</td>
         <td >0</td>
@@ -372,7 +389,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="220728000">0.220</td>
+        <td class="duration" data-value="206389000">0.206</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -380,33 +397,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>12</td>
+      <td>22</td>
+      <td>1</td>
+      <td>4</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>12</td>
+      <td>27</td>
 
       <td>3</td>
-      <td>0</td>
-      <td>3</td>
+      <td>1</td>
+      <td>4</td>
 
-      <td class="duration">0.765</td>
-      <td>3</td>
+      <td class="duration">2.491</td>
+      <td>4</td>
     </tr>
     <tr>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+      <td>81.48%</td>
+      <td>3.70%</td>
+      <td>14.81%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
+      <td>75.00%</td>
+      <td>25.00%</td>
       <td></td>
       <td></td>
-      <td>100.00%</td>
+      <td>75.00%</td>
     </tr>
   </tfoot>
 </table>

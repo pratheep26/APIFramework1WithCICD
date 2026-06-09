@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 09 11:30:43 IST 2026</td>
+<td>Started on:</td><td>Tue Jun 09 11:49:28 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2040 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2980 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,33 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Validate Create Order API"</td>
+<td><div><pre>java.lang.AssertionError: expected [201] but found [500]
+	at stepDefinitions.LoginStepDefinitions.api_success_with_status_code(LoginStepDefinitions.java:52)
+	at ✽.API success with status code 201(file:///Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2/src/test/java/features/CreateOrder.feature:19)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1179799230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1179799230'><pre>java.lang.AssertionError: expected [201] but found [500]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1461)
+	at stepDefinitions.LoginStepDefinitions.api_success_with_status_code(LoginStepDefinitions.java:52)
+	at ✽.API success with status code 201(file:///Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2/src/test/java/features/CreateOrder.feature:19)
+</pre></div></td>
+<td>1</td>
+<td>cucumberOptions.TestRunner@2bbf180e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,6 +103,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Create Product API", "Validate Create Product API"</td>
+<td></td>
+<td>0</td>
+<td>cucumberOptions.TestRunner@2bbf180e</td></tr>
+<tr>
 <td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Delete Product API", "Validate Delete Product API"</td>
 <td></td>
 <td>0</td>
@@ -84,11 +116,6 @@ function toggleAllBoxes() {
 <td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Login API", "Validate Login API"</td>
 <td></td>
 <td>0</td>
-<td>cucumberOptions.TestRunner@2bbf180e</td></tr>
-<tr>
-<td title='cucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Create Product API", "Validate Create Product API"</td>
-<td></td>
-<td>1</td>
 <td>cucumberOptions.TestRunner@2bbf180e</td></tr>
 </table><p>
 </body>

@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 						"json:target/jsonReports/cucumber-report.json",
 						"html:target/cucumber-report.html"},
 				
-				tags = ""
+				tags = "@Regression"
 			)
 				
 

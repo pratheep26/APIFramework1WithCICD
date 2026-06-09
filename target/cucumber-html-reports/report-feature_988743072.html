@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>API Test - eCommerce</td>
         <td>1</td>
-      <td>09 Jun 2026, 11:15</td>
+      <td>09 Jun 2026, 11:49</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Validate Create Order API</td>
+          <td      class="passed"    >10</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
-          <td     class="skipped"   >3</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">3</td>
+          <td class="total">15</td>
 
           <td >0</td>
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="154000">0.000</td>
+          <td class="duration" data-value="1826414000">1.826</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -188,20 +188,17 @@ $(document).ready(function() {
 
 
 <div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2978296657.html">@CreateOrder</a>
-       <a href="report-tag_4059758862.html">@Smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.826</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify Create Order API</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name"></span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -213,61 +210,11 @@ $(document).ready(function() {
   <div id="element-1" class="collapse collapsable-details  in ">
 
 
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-2">
-
-<div class="brief failed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-2" class="inner-level collapse collapsable-details  in ">
-        <div class="hook">
-          <div class="brief failed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">stepDefinitions.Hooks.beforeDeleteProduct()</span>
-
-  <span class="lead-duration duration">0.266</span>
-
-          </div>
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>Error message</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>java.lang.IllegalArgumentException: Header value cannot be null
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-	at io.restassured.internal.RequestSpecificationImpl.header(RequestSpecificationImpl.groovy:956)
-	at stepDefinitions.Hooks.createOrder(Hooks.java:78)
-	at stepDefinitions.Hooks.beforeDeleteProduct(Hooks.java:28)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-        </div>
-    </div>
-  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -279,13 +226,330 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Login payload with <span class="argument">&quot;codeaddict@outlook.com&quot;</span> and <span class="argument">&quot;Code@123&quot;</span></span>
+
+  <span class="lead-duration duration">0.335</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User calls <span class="argument">&quot;Login&quot;</span> API with <span class="argument">&quot;POST&quot;</span> HTTP method</span>
+
+  <span class="lead-duration duration">0.561</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">API success with status code <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.179</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name"><span class="argument">&quot;message&quot;</span> response body is <span class="argument">&quot;Login Successfully&quot;</span></span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Create Product API</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User calls <span class="argument">&quot;CreateProduct&quot;</span> API with <span class="argument">&quot;POST&quot;</span> HTTP method</span>
+
+  <span class="lead-duration duration">0.390</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">API success with status code <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name"><span class="argument">&quot;message&quot;</span> response body is <span class="argument">&quot;Product Added Successfully&quot;</span></span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Create Order API</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User calls <span class="argument">&quot;CreateOrder&quot;</span> API with <span class="argument">&quot;POST&quot;</span> HTTP method</span>
+
+  <span class="lead-duration duration">0.327</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">API success with status code <span class="argument">201</span></span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: expected [201] but found [500]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1461)
+	at stepDefinitions.LoginStepDefinitions.api_success_with_status_code(LoginStepDefinitions.java:52)
+	at ✽.API success with status code 201(file:///Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2/src/test/java/features/CreateOrder.feature:19)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
       <div class="step">
 
 
 <div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
-  <span class="name">Create Order API</span>
+  <span class="name">Delete Product API</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -312,7 +576,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
-  <span class="name">User calls <span class="argument">&quot;CreateOrder&quot;</span> API with <span class="argument">&quot;POST&quot;</span> HTTP method</span>
+  <span class="name">User calls <span class="argument">&quot;DeleteProduct&quot;</span> API with <span class="argument">&quot;DELETE&quot;</span> HTTP method</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -339,7 +603,34 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">API success with status code <span class="argument">201</span></span>
+  <span class="name">API success with status code <span class="argument">200</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name"><span class="argument">&quot;message&quot;</span> response body is <span class="argument">&quot;Product Deleted Successfully&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 

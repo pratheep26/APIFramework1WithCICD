@@ -1,4 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.176 s -- in TestSuite
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.138 s <<< FAILURE! -- in TestSuite
+cucumberOptions.TestRunner.runScenario["", "Validate Create Order API"](1) -- Time elapsed: 1.856 s <<< FAILURE!
+java.lang.AssertionError: expected [201] but found [500]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1461)
+	at stepDefinitions.LoginStepDefinitions.api_success_with_status_code(LoginStepDefinitions.java:52)
+	at ✽.API success with status code 201(file:///Users/pratheepponnusamy/Desktop/API_Testing/APIFramework2/src/test/java/features/CreateOrder.feature:19)
+
