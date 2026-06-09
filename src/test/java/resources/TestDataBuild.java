@@ -1,5 +1,10 @@
 package resources;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import pojo.CreateOrder;
+import pojo.CreateOrderRequest;
 import pojo.CreateProductRequest;
 import pojo.LoginRequest;
 
@@ -25,6 +30,17 @@ public class TestDataBuild {
 		createProductRequest.setProductDescription("Iphone 15 Pro");
 		createProductRequest.setProductFor("All");
 		return createProductRequest;
+	}
+	
+	public CreateOrderRequest createOrderPayload(String productOrderedId) {
+		CreateOrder createOrder = new CreateOrder();
+		createOrder.setCountry("India");
+		createOrder.setProductOrderedId(productOrderedId);
+		List<CreateOrder> orderDetails = new ArrayList<CreateOrder>();
+		orderDetails.add(createOrder);
+		CreateOrderRequest createOrderRequest = new CreateOrderRequest();
+		createOrderRequest.setOrders(orderDetails);
+		return createOrderRequest;
 	}
 
 }

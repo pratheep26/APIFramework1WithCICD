@@ -11,30 +11,31 @@ import resources.TestDataBuild;
 import resources.Utils;
 
 public class Hooks extends Utils {
-	
-	//RequestSpecification request;
-    //Response response;
-	
+
+	// RequestSpecification request;
+	// Response response;
+
 	TestDataBuild testData = new TestDataBuild();
 
 	@Before("@CreateProduct")
-	public void beforeScenario() throws IOException {
-		TestContext.request = given()
-                .spec(requestSpecification())
-                .header("Content-Type", "application/json")
+	public void beforeCreateProduct() throws IOException {
+		login();
+	}
 
-                .body(testData.loginPayload(getGlobalProperties("userEmail"),
-                		getGlobalProperties("userPassword")));
+	private void login() throws IOException {
 
-		TestContext.response = TestContext.request.when()
-                .post(APIResources.Login.getAPIResource());
+		TestContext.request = given().spec(requestSpecification()).header("Content-Type", "application/json")
 
-        TestContext.accessToken = getJsonPath(TestContext.response, "token");
+				.body(testData.loginPayload(getGlobalProperties("userEmail"), getGlobalProperties("userPassword")));
 
-        TestContext.userId = getJsonPath(TestContext.response, "userId");
+		TestContext.response = TestContext.request.when().post(APIResources.Login.getAPIResource());
 
-        System.out.println("Token: " + TestContext.accessToken);
-        System.out.println("UserId: " + TestContext.userId);
+		TestContext.accessToken = getJsonPath(TestContext.response, "token");
+
+		TestContext.userId = getJsonPath(TestContext.response, "userId");
+
+		System.out.println("Token: " + TestContext.accessToken);
+		System.out.println("UserId: " + TestContext.userId);
 
 	}
 }
